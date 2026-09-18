@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office'
+      xmlns:w='urn:schemas-microsoft-com:office:word'
+      xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>🌱 语芽 · 使用说明</title>
+<style>
+body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#2b2d42;line-height:1.8}
+h1{color:#ff8fab;border-bottom:3px solid #ff8fab;padding-bottom:10px}
+h2{color:#a0c4ff;margin-top:32px;border-left:4px solid #a0c4ff;padding-left:12px}
+h3{color:#2b2d42;margin-top:24px}
+code{background:#f5f5f5;padding:2px 8px;border-radius:4px;font-size:14px}
+pre{background:#f5f5f5;padding:16px;border-radius:10px;overflow-x:auto;font-size:14px;line-height:1.6}
+.box{background:#fffbe6;border:1px solid #ffd166;border-radius:12px;padding:16px;margin:16px 0}
+.warn{background:#ffe8e8;border:1px solid #ff8fab;border-radius:12px;padding:16px;margin:16px 0}
+.ok{background:#e8f5e0;border:1px solid #b5e48c;border-radius:12px;padding:16px;margin:16px 0}
+</style>
+</head>
+<body>
+
+<h1>🌱 语芽 · 轻松学英语 — 使用说明</h1>
+<p><b>版本：</b>1.0 &nbsp;|&nbsp; <b>更新日期：</b>2026年6月</p>
+
+<h2>📂 文件夹结构</h2>
+<pre>
+language-learn/
+├── index.html          ← 主程序（双击打开）
+├── css/
+│   └── style.css       ← 样式文件（配色、动画、布局）
+├── js/
+│   ├── words.js        ← 词库文件（单词、关卡配置）
+│   └── app.js          ← 逻辑文件（闯关、答题、树苗、贴纸）
+└── 使用说明.html       ← 就是本文件
+</pre>
+
+<div class="ok">
+✅ 全部纯本地运行，不需要联网，不需要服务器，打开 index.html 直接使用。
+</div>
+
+<h2>🚀 快速开始</h2>
+<ol>
+  <li>双击 <code>index.html</code>，在浏览器中打开</li>
+  <li>首页可以看到<b>成长树苗 🌱</b>和<b>每日目标 🎯</b></li>
+  <li>点击底部导航「<b>🗺️ 闯关</b>」进入关卡选择</li>
+  <li>从第1关开始，每关10道题，答对获得<b>水滴 💧</b></li>
+  <li>水滴浇灌树苗，从🌱小种子长成🍎结果实</li>
+</ol>
+
+<h2>🎮 五种题型说明</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse:collapse;width:100%;border-color:#e0e0e0">
+  <tr style="background:#fef9ef">
+    <th>题型</th><th>图标</th><th>说明</th><th>适合谁</th>
+  </tr>
+  <tr>
+    <td><b>看图选词</b></td><td>🖼️</td>
+    <td>显示表情图标，从4个选项中选出对应的英文单词</td>
+    <td>视觉型学习者</td>
+  </tr>
+  <tr>
+    <td><b>听音选义</b></td><td>🔊</td>
+    <td>内置语音朗读单词，选出正确的中文释义</td>
+    <td>训练听力</td>
+  </tr>
+  <tr>
+    <td><b>拼写填空</b></td><td>✍️</td>
+    <td>显示中文+表情，给出部分字母提示，补全剩余字母</td>
+    <td>降低拼写难度</td>
+  </tr>
+  <tr>
+    <td><b>词义配对</b></td><td>🤝</td>
+    <td>点击式配对：点一个英文，再点对应中文，配成一对</td>
+    <td>互动式巩固</td>
+  </tr>
+  <tr>
+    <td><b>句子填空</b></td><td>📝</td>
+    <td>简单短句中挖掉一个单词，补全它</td>
+    <td>语境中记单词</td>
+  </tr>
+</table>
+
+<h2>🧠 记忆算法说明</h2>
+<ul>
+  <li><b>答对的单词</b> → 加入「已掌握」列表，减少出现频率</li>
+  <li><b>答错的单词</b> → 加入「待复习」列表，后续题目中会高频少量重复出现</li>
+  <li>每关最后2题会优先从复习列表中抽取，巩固薄弱单词</li>
+  <li>学习历史保存在浏览器中，关闭页面不会丢失</li>
+</ul>
+
+<h2>🌳 成长树苗体系</h2>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;border-color:#e0e0e0">
+  <tr style="background:#fef9ef"><th>阶段</th><th>图标</th><th>名称</th><th>所需水滴</th></tr>
+  <tr><td>0</td><td>🌱</td><td>小种子</td><td>初始</td></tr>
+  <tr><td>1</td><td>🌿</td><td>小嫩芽</td><td>10 滴</td></tr>
+  <tr><td>2</td><td>🌳</td><td>小树苗</td><td>25 滴</td></tr>
+  <tr><td>3</td><td>🌸</td><td>开花啦</td><td>50 滴</td></tr>
+  <tr><td>4</td><td>🍎</td><td>结果实</td><td>80 滴</td></tr>
+</table>
+
+<h2>🏅 贴纸收集</h2>
+<p>每通过 <b>3 关</b> 解锁一张新贴纸，共9张贴纸可收集。</p>
+<p>在底部导航「🏅 贴纸」页面查看收集进度。</p>
+
+<hr style="margin:32px 0">
+
+<h1>🔧 进阶修改指南</h1>
+<p>下面教你如何自己修改词库、增减关卡、调整难度。</p>
+
+<h2>📝 如何新增单词</h2>
+<p>打开 <code>js/words.js</code>，找到 <code>WORD_BANK</code> 数组，在末尾添加新条目：</p>
+
+<pre>
+{ id: 71,                      // ← 唯一编号，不能和已有的重复
+  en: 'panda',                 // ← 英文单词
+  zh: '熊猫',                  // ← 中文释义
+  emoji: '🐼',                 // ← 表情符号（看图选词用）
+  syllable: 'pan-da',          // ← 音节拆分（用 - 隔开）
+  mnemonic: '潘达——熊猫潘达（panda）最可爱',  // ← 谐音记忆口诀
+  category: 'animals'          // ← 分类标签
+},
+</pre>
+
+<div class="box">
+💡 <b>提示：</b>表情符号可以从 emojipedia.org 复制。记忆口诀尽量用谐音+场景联想，越有趣越好记。
+</div>
+
+<h2>📝 如何新增关卡</h2>
+<p>在 <code>js/words.js</code> 中找到 <code>LEVELS</code> 数组，在末尾添加：</p>
+
+<pre>
+{ id: 8,                                   // ← 关卡编号
+  name: '交通工具 🚗',                       // ← 关卡名称
+  desc: '学会各种交通工具的英文',             // ← 关卡描述
+  wordIds: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80]  // ← 单词ID列表
+},
+</pre>
+
+<div class="warn">
+⚠️ <b>注意：</b>wordIds 里填的是单词的 id，不是数组下标。确保这些 id 在 WORD_BANK 中存在。
+</div>
+
+<h2>📝 如何调整关卡难度</h2>
+<p><b>方法1：减少每关单词量</b></p>
+<p>在 <code>LEVELS</code> 里删掉 wordIds 中的几个ID即可（最少建议保留6个以上）。</p>
+
+<p><b>方法2：增加提示信息</b></p>
+<p>在 <code>WORD_BANK</code> 中完善每个单词的 <code>mnemonic</code>（记忆口诀）和 <code>syllable</code>（音节），提示越丰富，学习越轻松。</p>
+
+<p><b>方法3：更换干扰词范围</b></p>
+<p>干扰词从整个 WORD_BANK 中随机抽取。如果想缩小范围，可以修改 <code>getDistractors</code> 函数（在 words.js 底部）。</p>
+
+<h2>📝 如何添加/修改短句</h2>
+<p>在 <code>js/words.js</code> 中找到 <code>SENTENCE_BANK</code> 数组：</p>
+
+<pre>
+{ sentence: 'I have a {blank}.',   // ← 句子，{blank} 是填空位置
+  answer: 'cat',                    // ← 填空答案
+  hint: '🐱',                        // ← 提示表情
+  zh: '我有一只___。'               // ← 中文翻译
+},
+</pre>
+
+<h2>🎨 如何修改配色主题</h2>
+<p>打开 <code>css/style.css</code>，在文件开头的 <code>:root</code> 中修改颜色值：</p>
+
+<pre>
+:root {
+  --primary:     #ff8fab;      /* 主色（粉红）—— 改成你喜欢的颜色 */
+  --secondary:   #a0c4ff;      /* 辅助色（天蓝） */
+  --accent:      #ffd166;      /* 强调色（蛋黄） */
+  --green:       #b5e48c;      /* 绿色（草绿） */
+  --bg:          #fef9ef;      /* 背景色 */
+  --text:        #2b2d42;      /* 文字色 */
+  --radius:      20px;         /* 卡片圆角（越大越圆润） */
+}
+</pre>
+
+<div class="ok">
+🎨 推荐配色网站：coolors.co 或 colorhunt.co 找「马卡龙」色系。
+</div>
+
+<h2>💾 如何清除学习数据</h2>
+<p>在浏览器中打开开发者工具（F12）→ 应用（Application）→ 本地存储（Local Storage）→ 删除 <code>langlearn_data</code> 这条记录。</p>
+<p>或者：打开 index.html 后，在浏览器控制台输入：</p>
+<pre>localStorage.removeItem('langlearn_data'); location.reload();</pre>
+
+<h2>❓ 常见问题</h2>
+<h3>Q: 换了电脑，学习进度怎么迁移？</h3>
+<p>A: 在旧电脑浏览器控制台输入 <code>localStorage.getItem('langlearn_data')</code> 复制结果，在新电脑控制台输入 <code>localStorage.setItem('langlearn_data', '粘贴到这里')</code>。</p>
+
+<h3>Q: 页面显示不正常怎么办？</h3>
+<p>A: 使用最新版 Chrome、Edge 或 Firefox 浏览器。IE 浏览器不支持。</p>
+
+<h3>Q: 想重置所有关卡重新学？</h3>
+<p>A: 清除 localStorage 即可（见上方「清除学习数据」）。</p>
+
+<h3>Q: 语音播放没声音？</h3>
+<p>A: 检查浏览器是否允许页面播放音频，部分浏览器需要用户先点击一次页面才能播放语音。</p>
+
+<hr style="margin:32px 0">
+<div style="text-align:center;color:#8d99ae;font-size:13px">
+🌱 语芽 · 轻松学英语 — 让学习像浇水一样自然<br>
+完全免费 · 纯本地运行 · 无需联网 · 无广告
+</div>
+
+</body>
+</html>
